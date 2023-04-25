@@ -122,7 +122,7 @@ int access_cache(CacheLine cache[][NUM_LINES], uint32_t address, CacheType type,
     for (int i = 0; i < NUM_LINES / num_sets; i++) {
         cache[set][i].counter += (i != replacement);
     }
-
+  
     return 0;
 }
 
